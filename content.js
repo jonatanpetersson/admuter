@@ -4,7 +4,6 @@ if (document) {
   let isMuted = false;
   const documentObserver = new MutationObserver(() => {
     const element = document.querySelector(selector);
-    console.log(element);
     const isAds = !element;
 
     if (!isMuted && isAds) {
